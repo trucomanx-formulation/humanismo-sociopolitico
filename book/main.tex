@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\input{formato}
+% pacote babel ou equivalent
+
+\title{Humanismo Socio-político}
+\author{Fernando Pujaico Rivera}
+
+\begin{document}
+
+\maketitle
+
+\renewcommand*\contentsname{Conteúdo}
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Explicación Part A}
+\input{caps/desigualdad}
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Explicación Part B}
+
+\input{caps/bases}
+\input{caps/temporal}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\chapter*{Bibliografia}
+\addcontentsline{toc}{chapter}{\textcolor{grey40}{Bibliografia}}
+\printbibliography[heading=bibempty]
+
+
+\end{document}
